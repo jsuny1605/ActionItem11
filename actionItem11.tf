@@ -3,7 +3,6 @@ resource "aws_instance" "RHEL-Server-HTTPD" {
   ami           = "ami-0fe630eb857a6ec83"
   instance_type = "t2.medium"
   key_name      = "macbook"
-  vpc_security_group_ids = [aws_security_group.Allow-HTTP.id]
   tags = {
     Name = "actionItem11RHEL"
   }
